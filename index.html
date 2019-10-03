@@ -16,27 +16,37 @@
 			</div>
 		</header>
 		<script>
+
+			function showorhide() {
+				if (document.getElementById("mainservertitle").style.display ==="block") {
+					document.getElementById("mainservertitle").style.display = "none"
+				} else {
+					document.getElementById("mainservertitle").style.display = "block"
+				}
+				
+			}
+
 			function clickme() {
 				document.getElementById("button").innerHTML="hello"
 			}
 		</script>
 
 		<div class="container">
-			<div style="display: block">
-				<div class="leftareacontainer">
-					<!-- <button onclick="clickme()">click me</button> -->
-					<div class="lefttitle">
-						<b>TIBCO DEV Servers</b>
-					</div>
+			<div class="leftareacontainer">
+				<div id="dropdown">
 					<ul>
-						<li><a>link1</a></li>
-						<li><a>link2</a></li>
-						<li><a>link3</a></li>
+						<li onclick="showorhide()"><a><b>TIBCO DEV Servers</b></a>
+							<ul id="mainservertitle">
+								<li><a href="">link 1</a> </li>
+								<li><a href="">link 2</a> </li>
+								<li><a href="">link 3</a> </li>
+							</ul>
+						</li>
 					</ul>
-				</div>
-				<div class="rightareacontainer">
-					<div id="button"></div>
-				</div>
+				</div> 
+			</div>
+			<div class="rightareacontainer">
+				<div id="button"></div>
 			</div>
 		</div>
 
