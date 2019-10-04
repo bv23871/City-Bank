@@ -18,10 +18,10 @@
 		<script>
 
 			function showorhide() {
-				if (document.getElementById("mainservertitle").style.display ==="block") {
-					document.getElementById("mainservertitle").style.display = "none"
+				if (document.getElementById("listofservers").style.display ==="block") {
+					document.getElementById("listofservers").style.display = "none"
 				} else {
-					document.getElementById("mainservertitle").style.display = "block"
+					document.getElementById("listofservers").style.display = "block"
 				}
 				
 			}
@@ -33,17 +33,14 @@
 
 		<div class="container">
 			<div class="leftareacontainer">
-				<div id="dropdown">
-					<ul>
-						<li onclick="showorhide()"><a><b>TIBCO DEV Servers</b></a>
-							<ul id="mainservertitle">
-								<li><a href="">link 1</a> </li>
-								<li><a href="">link 2</a> </li>
-								<li><a href="">link 3</a> </li>
-							</ul>
-						</li>
+				<div class="serversblock">
+					<a onclick="showorhide()" class="singleserverblock">TIBCO DEV Servers</a>
+					<ul id="listofservers">
+						<li><a href="">link 1</a> </li>
+						<li><a href="">link 2</a> </li>
+						<li><a href="">link 3</a> </li>
 					</ul>
-				</div> 
+				</div>
 			</div>
 			<div class="rightareacontainer">
 				<div id="button"></div>

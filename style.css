@@ -74,22 +74,35 @@ footer {
     border: 1px solid #354235
 }
 
-#mainservertitle {
+#listofservers {
     list-style-type: none;
     display: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 li {
-    background:  #e3e3e3;
-    margin: 1px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.singleserverblock {
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: none;
+    background: lightgray;
+    color: #002d72
+}
+
+.serversblock {
+    margin: 10px;
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
     display: flex;
     color: #002d72;
-    padding: 5px;
+    padding: 5px 5px 5px 20px;
 }
 
 a:hover {
