@@ -57,21 +57,24 @@ footer {
 }
 
 .leftareacontainer {
-    margin: 2px;
+    margin: 2px 0px 2px 2px;
     float: left;
     width: 20%;
     padding: 1px;
     overflow: scroll;
-    border: 1px solid #354235
+    border: 1px solid #354235;
+    border-right: none;
+    box-shadow: 1px 1px 5px #D4D4D4;
 }
 
 .rightareacontainer {
-    margin: 2px;
+    margin: 2px 2px 2px 0px;
     float: right;
     width: 79%;
     padding: 1px;
     overflow: scroll;
-    border: 1px solid #354235
+    border: 1px solid #354235;
+    box-shadow: 1px 1px 5px #D4D4D4;
 }
 
 #listofservers {
